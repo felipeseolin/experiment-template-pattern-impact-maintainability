@@ -47,7 +47,7 @@ public class PautaController {
             pautaDAO.salvar(pauta);
         } catch (SQLException ex) {
             Logger.getLogger(PautaController.class.getName()).log(Level.SEVERE, null, ex);
-            return HttpStatus.CREATED;
+            return HttpStatus.BAD_REQUEST;
         }
         
         return HttpStatus.CREATED;
