@@ -11,7 +11,7 @@ import java.util.List;
 import br.edu.utfpr.dv.sireata.model.Pauta;
 
 public class PautaDAO {
-	
+
 	public Pauta buscarPorId(int id) throws SQLException{
 		Connection conn = null;
 		PreparedStatement stmt = null;
